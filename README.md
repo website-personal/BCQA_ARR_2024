@@ -1,13 +1,11 @@
-<p align="center">
-  <img src="dexter.png" />
-</p>
+
 
 <p align="center">
   <img src="bcqa_neurips.001.jpeg" />
 </p>
 
 
-# DEXTER (Benchmarking Complex QA)
+# BCQA (Benchmarking Complex QA)
 
 Answering complex questions is a difficult task that requires knowledge retrieval. 
 To address this, we propose our easy to use and  extensible benchmark composing diverse complex QA tasks and provide a toolkit to evaluate zero-shot retrieval capabilities of state-of-the-art dense and sparse retrieval models in an open-domain setting. Additionally, since context-based reasoning is key to complex QA tasks, we extend our toolkit with various LLM engines. Both the above components together allow our users to evaluate the various components in the Retrieval Augmented Generation pipeline.
@@ -22,8 +20,7 @@ For components in retrieval we draw inspiration from BEIR (https://github.com/be
 2) Create a conda environment conda create -n bcqa  <br />
 3) pip install -e .<br />
 
-# From pip
-pip install dexter-cqa
+
 # Datasets
 
 |  Dataset Name  |  Dataset alias |                  Homepage                 |                Characteristics               | #Questions | Corpus Size |
@@ -252,27 +249,6 @@ loader = RetrieverDataset("my-dataset","my-dataset-corpus",
 # Building your own retrievers
 
 To build your own retriever you can extend from the class bcqa/retriever/BaseRetriever.py and use it in your evaluation script.
-
-# Citing & Authors
-Thanks to the following collaborators: <br />
-<b> Venktesh Viswanathan </b> <br />
-<b> Deepali Prabhu </b> <br />
-<b> Avishek Anand </b> <br />
-
-
-
-```
-@misc{venky:2024:dexter,
-      title={DEXTER: A Benchmark for open-domain Complex Question Answering using LLMs}, 
-      author={Venktesh V. and Deepali Prabhu and Avishek Anand},
-      year={2024},
-      eprint={2406.17158},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2406.17158}, 
-}
-```
-
 
 
 
