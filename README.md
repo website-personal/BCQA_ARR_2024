@@ -113,7 +113,7 @@ if __name__ == "__main__":
 All evaluation scripts dataset wise can be found in the evaluation folder
 ## Example TAT-QA ( When building from source)
 ```
-curl https://gitlab.tudelft.nl/venkteshviswan/bcqa_data/-/raw/main/tatqa.zip -o tatqa.zip
+curl https://gitlab.tudelft.nl/anonymous_arr/bcqa_data/-/raw/main/tatqa.zip -o tatqa.zip
 ```
 In evaluation/config.ini configure the corresponding paths to downloaded files
 configure project root directory to PYTHONPATH variable
