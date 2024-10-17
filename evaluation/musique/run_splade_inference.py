@@ -14,7 +14,7 @@ if __name__ == "__main__":
                                      document_encoder_path="naver/splade_v2_max"
                                      ,batch_size=4)
 
-    corpus_path = "/raid_data-lv/venktesh/BCQA/wiki_musique_corpus.json"
+    corpus_path = "wiki_musique_corpus.json"
 
     loader = RetrieverDataset("musiqueqa","wiki-musiqueqa-corpus","evaluation/config.ini",Split.DEV)
     queries, qrels, corpus = loader.qrels()
@@ -23,7 +23,7 @@ if __name__ == "__main__":
 
     ## wikimultihop
 
-    # with open("/raid_data-lv/venktesh/BCQA/wiki_musique_corpus.json") as f:
+    # with open("wiki_musique_corpus.json") as f:
     #     corpus = json.load(f)
 
     similarity_measure = CosScore()

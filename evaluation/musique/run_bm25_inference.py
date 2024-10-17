@@ -8,7 +8,7 @@ from dexter.utils.metrics.retrieval.RetrievalMetrics import RetrievalMetrics
 
 if __name__ == "__main__":
 
-    corpus_path = "/raid_data-lv/venktesh/BCQA/wiki_musique_corpus.json"
+    corpus_path = "wiki_musique_corpus.json"
 
     loader = RetrieverDataset("musiqueqa","wiki-musiqueqa-corpus",
                                "evaluation/config.ini", Split.DEV)
@@ -21,7 +21,7 @@ if __name__ == "__main__":
     ## wikimultihop
     
 
-    # with open("/raid_data-lv/venktesh/BCQA/wiki_musique_corpus.json") as f:
+    # with open("wiki_musique_corpus.json") as f:
     #     corpus = json.load(f)
 
     response = bm25_search.retrieve(corpus,queries,100)

@@ -10,7 +10,7 @@ if __name__ == "__main__":
         config_instance = LLMEngineOrchestrator()
         answer_f1 = AnswerF1()
         llm_instance = config_instance.get_llm_engine(data="", llm_class="openai", model_name="gpt-3.5-turbo")
-        with open("/home/venky/BCQA_final/DEXTER/ambigqa_colbert_docs.json") as f:
+        with open("ambigqa_colbert_docs.json") as f:
                 evidence = json.load(f)
         question_df = {"questions":[],"answers":[]}
         loader = RetrieverDataset("ambignq", "ambignq-corpus", "evaluation/config.ini", Split.DEV, tokenizer=None)      

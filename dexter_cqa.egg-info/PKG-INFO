@@ -2,10 +2,8 @@ Metadata-Version: 2.1
 Name: dexter-cqa
 Version: 1.0.1
 Summary: A Benchmark for Complex Heterogeneous Question answering
-Home-page: https://github.com/VenkteshV/BCQA
+Home-page: 
 Download-URL: 
-Author: Venktesh V, Deepali Prabhu
-Author-email: venkyviswa12@gmail.com
 License: Apache License 2.0
 Keywords: Information Retrieval Transformer Networks Complex Question Answering BERT PyTorch Question Answering IR NLP deep learning
 Classifier: Development Status :: 4 - Beta

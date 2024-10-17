@@ -23,7 +23,7 @@ if __name__ == "__main__":
     response = dpr_sent_search.retrieve(
         queries, 100,chunk=True,chunksize=50000*4)
     
-    with open('/home/venky/venky_bcqa/BCQA/evaluation/ottqa/dpr_out.json','w+') as fp:
+    with open('evaluation/ottqa/dpr_out.json','w+') as fp:
         json.dump(response,fp)
     print("indices",len(response))
     metrics = RetrievalMetrics(k_values=[1,10,100])

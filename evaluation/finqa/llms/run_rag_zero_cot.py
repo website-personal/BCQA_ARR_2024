@@ -8,7 +8,7 @@ if __name__=="__main__":
         config_instance = LLMEngineOrchestrator()
         llm_instance = config_instance.get_llm_engine(data="",llm_class="openai",model_name="gpt-3.5-turbo")
         #assertTrue(isinstance(llm_instance, OpenAIEngine))
-        with open("/home/venky/venky_bcqa/BCQA/finqa_colbert_docs_1.json") as f:
+        with open("finqa_colbert_docs_1.json") as f:
                 evidence = json.load(f)
         question_df = {"questions":[],"answers":[]}
 

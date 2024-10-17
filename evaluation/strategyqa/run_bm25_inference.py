@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     queries, qrels, corpus = loader.qrels()
     password = "EEjHn3N6AZnHPCia-Zfm"
-    cert_path = "/home/venky/numerical-llm/elasticsearch-8.11.3/config/certs/http_ca.crt"
+    cert_path = "elasticsearch-8.11.3/config/certs/http_ca.crt"
     bm25_search = BM25Search(index_name="strategyqa",initialize=True, elastic_passoword=password,cert_path=cert_path)
 
 

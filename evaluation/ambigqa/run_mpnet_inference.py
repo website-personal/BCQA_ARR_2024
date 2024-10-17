@@ -18,7 +18,7 @@ if __name__ == "__main__":
                                      document_encoder_path="multi-qa-mpnet-base-cos-v1"
                                      ,batch_size=32, show_progress_bar=True)
 
-    corpus_path = "/raid_data-lv/venktesh/BCQA/wiki_musique_corpus.json"
+    corpus_path = "wiki_musique_corpus.json"
 
     loader = RetrieverDataset("ambignq","ambignq-corpus",
                                "evaluation/config.ini", Split.DEV,tokenizer=None)    
@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     ## wikimultihop
 
-    # with open("/raid_data-lv/venktesh/BCQA/wiki_musique_corpus.json") as f:
+    # with open("wiki_musique_corpus.json") as f:
     #     corpus = json.load(f)
 
     similarity_measure = CosineSimilarity()

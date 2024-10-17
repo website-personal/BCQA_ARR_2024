@@ -14,7 +14,7 @@ if __name__ == "__main__":
                                      document_encoder_path="msmarco-distilbert-base-tas-b"
                                      ,batch_size=32, show_progress_bar=True)
 
-    corpus_path = "/raid_data-lv/venktesh/BCQA/wiki_musique_corpus.json"
+    corpus_path = "wiki_musique_corpus.json"
 
     loader = RetrieverDataset("ambignq","ambignq-corpus",
                                "evaluation/config.ini", Split.DEV,tokenizer=None) 

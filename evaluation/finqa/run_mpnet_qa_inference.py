@@ -14,7 +14,7 @@ if __name__ == "__main__":
                                      document_encoder_path="multi-qa-mpnet-base-cos-v1"
                                      ,batch_size=32)
     # config = config_instance.get_all_params()
-    corpus_path = "/raid_data-lv/venktesh/BCQA/wiki_musique_corpus.json"
+    corpus_path = "wiki_musique_corpus.json"
 
     loader = RetrieverDataset("finqa","finqa-corpus","evaluation/config.ini",Split.DEV)
     queries, qrels, corpus = loader.qrels()
@@ -23,7 +23,7 @@ if __name__ == "__main__":
 
     ## wikimultihop
 
-    # with open("/raid_data-lv/venktesh/BCQA/wiki_musique_corpus.json") as f:
+    # with open("wiki_musique_corpus.json") as f:
     #     corpus = json.load(f)
 
     similarity_measure = CosineSimilarity()
